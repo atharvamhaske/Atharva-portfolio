@@ -111,6 +111,25 @@ a:hover {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
+  #slide {
+    position: absolute;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
   transition: all 0.3 ease-in-out;
 }
 
